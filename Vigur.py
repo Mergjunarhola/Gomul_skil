@@ -9,7 +9,7 @@ class Vigur:
 
     # Fall sem skrifar hnit vigurs á skjá
     def prenta(self):
-        print([self._X,self._Y])
+        print("["+" ".join(map(str,[self._X,self._Y]))+"]")
     # Þinn kóði hér
 
     # Fall sem skilar lengd
