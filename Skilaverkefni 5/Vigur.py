@@ -35,6 +35,7 @@ class Vigur:
     # Fall sem tekur vigur sem parameter og skilar horni milli vigra
     def horn(self, v):
         return abs(self.stefnuhorn()-v.stefnuhorn())
+        #return (v.stefnuhorn()-self.stefnuhorn())%360
     # Þinn kóði hér
 
     # Fall sem tekur vigur sem parameter og skilar summu vigri
