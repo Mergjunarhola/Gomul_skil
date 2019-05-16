@@ -29,12 +29,12 @@ class Vigur:
 
     # Fall sem skilar stefnuhorni
     def stefnuhorn(self):
-        return (((atan2(self._Y,self._X))/pi)*180)%360
+        return format((((atan2(self._Y,self._X))/pi)*180)%360,".1f")
     # Þinn kóði hér
 
     # Fall sem tekur vigur sem parameter og skilar horni milli vigra
     def horn(self, v):
-        return abs(self.stefnuhorn()-v.stefnuhorn())
+        return abs(float(self.stefnuhorn())-float(v.stefnuhorn()))
         #return (v.stefnuhorn()-self.stefnuhorn())%360
     # Þinn kóði hér
 
